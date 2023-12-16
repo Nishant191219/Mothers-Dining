@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>signup</ion-title>
+    <ion-buttons slot="start"><ion-back-button defaultHref="splash-screen"></ion-back-button></ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content padding>
+  <div class="sign-up">
+    <ion-label><h1 class="heading1">Sign Up</h1></ion-label>
+    <form>
+      <ion-item>
+        <ion-input class="form-input" type="text" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input class="form-input" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input class="form-input" type="password" placeholder="Password"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-input class="form-input" type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+      <button ion-button color="primary" class="sign-up-button" (click)="signUp()">Sign Up</button>
+      <a class="auth-toggle-link" routerLink="/login">Already a member? Login</a>
+    </form>
+  </div>
 </ion-content>
+<ion-footer>
+  <ion-toolbar class="footer-section">
+    <ion-title>Mother’s Dining</ion-title>
+  </ion-toolbar>
+</ion-footer>
