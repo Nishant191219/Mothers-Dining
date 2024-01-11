@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.page.scss'],
 })
 export class CartPage implements OnInit {
-  public cart=[{"image": "assets/images/menu.jpg"}];
   constructor() { }
 
   ngOnInit() {
