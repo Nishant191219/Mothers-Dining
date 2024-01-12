@@ -1,94 +1,13 @@
-
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon name="menu-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Mother’s Dining</ion-title>
-    <ion-avatar slot="end">
-      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-    </ion-avatar>
+    <ion-title>Cart</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <ion-slides pager="true" *ngFor="let item of cart" class="ion-padding">
-    <ion-slide>
-       <img [src]="item.image"/>
-    </ion-slide>
-  </ion-slides>
-  <h1 class="ion-padding-horizontal"><b>Veg</b></h1>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/punjabi-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Punjabi Thali</b></h1>
-          <p class="text">Paneer Masala,  Dal Tadaka, Navratna Pulao, Bhindi Fry, Butter Nan 
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 180/-
-            <ion-badge class="ion-margin-horizontal">4.2 (500+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/rajasthani-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Rajasthani Thali</b></h1>
-          <p class="text">Gatte ki Subji,  Panchmela Dal, Mung Dal Halwa, Dal Bati Churma, Jira Rice
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 175/-<ion-badge class="ion-margin-horizontal">4.4 (800+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <h1 class="ion-padding-horizontal"><b>Non-Veg</b></h1>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/chiken-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Chiken Thali</b></h1>
-          <p class="text">Chicken Masala, Tambada Rasaa, Pandhara Rasaa, Chapati, Solkadhi, Plain Rice
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 180/-
-            <ion-badge class="ion-margin-horizontal">4.2 (500+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/mutton-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Mutton Thali</b></h1>
-          <p class="text">Mutton Masala, Tambada Rasaa, Pandhara Rasaa, Solkadhi, Plain Rice
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 175/-<ion-badge class="ion-margin-horizontal">4.4 (800+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-button expand="full">Go To Cart</ion-button>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cart</ion-title>
+    </ion-toolbar>
+  </ion-header>
 </ion-content>

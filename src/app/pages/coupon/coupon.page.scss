@@ -1,0 +1,47 @@
+ion-input {
+    border: 2px solid rgba(23, 139, 255, 1)
+}
+.coupon-container {
+    display: flex;
+    color: #000;
+}
+.coupon-body {
+    display: block;
+    align-self: center;
+    //background-color:rgba(0, 127, 255, 0.6);
+}
+.coupon-text {
+    rotate: -90deg;
+}
+.coupon-content-body {
+    display: flex;
+}
+.btn {
+    float: right;
+    color:rgba(23, 139, 255, 1);
+}
+.coupon-content-block {
+    width:80%;
+    padding: 10px 0;
+}
+.coupon-content-body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.text {
+    color: green;
+}
+.dotted-section {
+    border-top-style: dotted;
+    margin: 10px 0;
+}
+.coupon-content-text {
+    margin-bottom: 10px;
+}
+ion-item {
+    button {
+     font-size: 16px;
+     background: #fff;
+    }
+}

@@ -1,179 +1,223 @@
 
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon name="menu-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-avatar slot="end">
-      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-    </ion-avatar>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-  <ion-slides pager="true" *ngFor="let item of cart" class="ion-padding">
-    <ion-slide>
-       <img [src]="item.image"/>
-    </ion-slide>
-  </ion-slides>
-  <h1 class="ion-padding-horizontal"><b>Starters</b></h1>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/punjabi-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Tomato Soup</b></h1>
-          <p class="text">A thick creamy soup with tamato’s as primary ingredient
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 120/-
-            <ion-badge class="ion-margin-horizontal">4.2 (500+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/rajasthani-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Chicken Soup</b></h1>
-          <p class="text">A spicy & tangy soup with bace of chicken broth & traditional masala’s
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 120/-<ion-badge class="ion-margin-horizontal">4.4 (500+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/rajasthani-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Masala Papad</b></h1>
-          <p class="text">A thin roasted papad with thinly diced tomatos, onions & chatpata seasoning
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 80/-<ion-badge class="ion-margin-horizontal">4.4 (500+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <h1 class="ion-padding-horizontal"><b>Main Course</b></h1>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/punjabi-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Paneer Masala</b></h1>
-          <p class="text">Creamy delight with succulent paneer in aromatic spices
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 170/-
-            <ion-badge class="ion-margin-horizontal">4.2 (800+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/rajasthani-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Butter Chicken</b></h1>
-          <p class="text">Rich and tender chicken in a velvety buttery sauce
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 220/-<ion-badge class="ion-margin-horizontal">4.4 (900+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/rajasthani-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Veg Kadai</b></h1>
-          <p class="text">A medley of fresh veggies, wok-tossed to perfection
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 180/-<ion-badge class="ion-margin-horizontal">4.4 (400+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <h1 class="ion-padding-horizontal"><b>Desserts</b></h1>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/chiken-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Gulab Jamun</b></h1>
-          <p class="text">Golden Khoya dumplings soaked in sweet rose-infused syrup (4pc)
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 100/-
-            <ion-badge class="ion-margin-horizontal">4.2 (500+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/mutton-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Gajar Ka Halwa</b></h1>
-          <p class="text">A warm, comforting blend of grated carrots and sweetness
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 120/-<ion-badge class="ion-margin-horizontal">4.4 (600+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content class="ion-no-padding">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="assets/images/mutton-thali.jpg" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1><b>Falooda</b></h1>
-          <p class="text">A refreshing rose-scented dessert with vermicelli and ice cream (250ml)
-          </p>
-          <ion-item class="ion-no-padding">
-            Rs. 80/-<ion-badge class="ion-margin-horizontal">4.4 (400+)</ion-badge>
-          </ion-item>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+<ion-menu contentId="main-content">
+  <ion-content class="ion-padding">
+    <div style="text-align: center;">
+      <ion-avatar style="margin: auto;">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <h1>Amar Anthony</h1>
+      <p>+91 123456789</p>
+      <ion-list lines="none">
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Go To Cart
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Thali Menu
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Course Menu
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="timer-outline" class="ion-margin-end"></ion-icon>
+            Order History
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="settings-outline" class="ion-margin-end"></ion-icon>
+            Settings
+          </button>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-avatar slot="end">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-slides pager="true" *ngFor="let item of cart" class="ion-padding">
+      <ion-slide>
+         <img [src]="item.image"/>
+      </ion-slide>
+    </ion-slides>
+    <h1 class="ion-padding-horizontal"><b>Starters</b></h1>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/punjabi-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Tomato Soup</b></h1>
+            <p class="text">A thick creamy soup with tamato’s as primary ingredient
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 120/-
+              <ion-badge class="ion-margin-horizontal">4.2 (500+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/rajasthani-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Chicken Soup</b></h1>
+            <p class="text">A spicy & tangy soup with bace of chicken broth & traditional masala’s
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 120/-<ion-badge class="ion-margin-horizontal">4.4 (500+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/rajasthani-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Masala Papad</b></h1>
+            <p class="text">A thin roasted papad with thinly diced tomatos, onions & chatpata seasoning
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 80/-<ion-badge class="ion-margin-horizontal">4.4 (500+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="ion-padding-horizontal"><b>Main Course</b></h1>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/punjabi-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Paneer Masala</b></h1>
+            <p class="text">Creamy delight with succulent paneer in aromatic spices
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 170/-
+              <ion-badge class="ion-margin-horizontal">4.2 (800+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/rajasthani-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Butter Chicken</b></h1>
+            <p class="text">Rich and tender chicken in a velvety buttery sauce
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 220/-<ion-badge class="ion-margin-horizontal">4.4 (900+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/rajasthani-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Veg Kadai</b></h1>
+            <p class="text">A medley of fresh veggies, wok-tossed to perfection
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 180/-<ion-badge class="ion-margin-horizontal">4.4 (400+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="ion-padding-horizontal"><b>Desserts</b></h1>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/chiken-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Gulab Jamun</b></h1>
+            <p class="text">Golden Khoya dumplings soaked in sweet rose-infused syrup (4pc)
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 100/-
+              <ion-badge class="ion-margin-horizontal">4.2 (500+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/mutton-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Gajar Ka Halwa</b></h1>
+            <p class="text">A warm, comforting blend of grated carrots and sweetness
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 120/-<ion-badge class="ion-margin-horizontal">4.4 (600+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/images/mutton-thali.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h1><b>Falooda</b></h1>
+            <p class="text">A refreshing rose-scented dessert with vermicelli and ice cream (250ml)
+            </p>
+            <ion-item class="ion-no-padding">
+              Rs. 80/-<ion-badge class="ion-margin-horizontal">4.4 (400+)</ion-badge>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</div>
+

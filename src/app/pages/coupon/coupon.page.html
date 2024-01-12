@@ -1,13 +1,138 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>coupon</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-content class="ion-padding">
+    <div style="text-align: center;">
+      <ion-avatar style="margin: auto;">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <h1>Amar Anthony</h1>
+      <p>+91 123456789</p>
+      <ion-list lines="none">
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Go To Cart
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Thali Menu
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Course Menu
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="timer-outline" class="ion-margin-end"></ion-icon>
+            Order History
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="settings-outline" class="ion-margin-end"></ion-icon>
+            Settings
+          </button>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">coupon</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Mother’s Dining</ion-title>
+      <ion-avatar slot="end">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  <ion-content>
+    <ion-card>
+     <ion-card-content class="ion-no-padding">
+       <div class="coupon-container">
+         <div class="coupon-body">
+           <p class="coupon-text">10% OFF</p>
+         </div>
+         <!-- <p>10% OFF</p> -->
+         <div class="coupon-content-block">
+           <div class="coupon-content-body">
+             <h1>OFFTEN</h1>
+             <button class="btn" style="float: right;">Apply</button>
+           </div>
+           <p class="text">Save ₹105 on this order!</p>
+           <div class="dotted-section"></div>
+           <p class="coupon-content-text">Use code OFFTEN and get 10% discount on order value above ₹200. Maximum discount ₹200.</p>
+           <p>More+</p>
+         </div>
+       </div>
+     </ion-card-content>
+    </ion-card>
+    <ion-card>
+     <ion-card-content class="ion-no-padding">
+       <div class="coupon-container">
+         <div class="coupon-body">
+           <p class="coupon-text">20% OFF</p>
+         </div>
+         <!-- <p>10% OFF</p> -->
+         <div class="coupon-content-block">
+           <div class="coupon-content-body">
+             <h1>OFFTWENTY</h1>
+             <button class="btn" style="float: right;">Apply</button>
+           </div>
+           <p class="text">Save ₹105 on this order!</p>
+           <div class="dotted-section"></div>
+           <p class="coupon-content-text">Use code OFFTWENTY and get 20% discount on order value above ₹200. Maximum discount ₹200.</p>
+           <p>More+</p>
+         </div>
+       </div>
+     </ion-card-content>
+    </ion-card>
+    <ion-card>
+     <ion-card-content class="ion-no-padding">
+       <div class="coupon-container">
+         <div class="coupon-body">
+           <p class="coupon-text">10% OFF</p>
+         </div>
+         <!-- <p>10% OFF</p> -->
+         <div class="coupon-content-block">
+           <div class="coupon-content-body">
+             <h1>OFFPAYTM</h1>
+             <button class="btn" style="float: right;">Apply</button>
+           </div>
+           <p class="text">Save ₹200 on this order!</p>
+           <div class="dotted-section"></div>
+           <p class="coupon-content-text">Use code OFFTEN and pay by paytm to get 10% paytm cashback on order value above ₹300. Maximum discount ₹200.</p>
+           <p>More+</p>
+         </div>
+       </div>
+     </ion-card-content>
+    </ion-card>
+    <ion-card>
+     <ion-card-content class="ion-no-padding">
+       <div class="coupon-container">
+         <div class="coupon-body">
+           <p class="coupon-text">25% OFF</p>
+         </div>
+         <!-- <p>10% OFF</p> -->
+         <div class="coupon-content-block">
+           <div class="coupon-content-body">
+             <h1>FIRSTORDER</h1>
+             <button class="btn" style="float: right;">Apply</button>
+           </div>
+           <p class="text">Save ₹60 on this order!</p>
+           <div class="dotted-section"></div>
+           <p class="coupon-content-text">Use code FIRSTORDER if this is your first order and get 25% discount on order value above ₹100. Maximum discount ₹200.</p>
+           <p>More+</p>
+         </div>
+       </div>
+     </ion-card-content>
+    </ion-card>
+  </ion-content>
+</div>

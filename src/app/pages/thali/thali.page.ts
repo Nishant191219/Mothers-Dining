@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thali.page.scss'],
 })
 export class ThaliPage implements OnInit {
-
+  public cart=[{"image": "assets/images/menu.jpg"}];
   constructor() { }
 
   ngOnInit() {
