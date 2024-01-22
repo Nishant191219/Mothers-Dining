@@ -8,32 +8,50 @@ ion-header {
     margin-bottom: 20px;
 }
 .sign-up {
-    padding: 30px 30px 0 30px;
+    padding: 30px 35px 0 35px;
 }
 .sign-up-button {
     width: 100%;
     background: rgba(0, 127, 255, 1);
     height: 52px;
     color: #fff;
+    font-size: 20px;
 }
 .heading1{
-    margin: 0 0 20px 15px;
+    margin: 0 0 20px 0;
+    font-size: 28px;
 }
 .auth-toggle-link {
     text-align: center;
     margin-top: 20px;
     display: block;
     text-decoration: none;
+    font-size: 14px;
 }
 ion-footer {
     --ion-toolbar-background: rgba(0, 127, 255, 0.6);
     //height: 80px;
 }
 .footer-section{
-    padding-top: 20px;
-    padding-bottom: 20px !important;
+    padding-top: 10px;
+    padding-bottom: 10px !important;
 }
 ion-title {
-    font-size: 20px;
+    font-size: 32px;
     color: #fff;
+    padding: 0;
+}
+ion-item{
+    --padding-end: 0px;
+    --padding-start:0px;
+}
+// .item-inner{
+//   padding:0 !important;
+// }
+.item-inner {
+    // Add your custom css here, write important at the end like this
+    --padding-end: 0px !important;
+}  
+.input-wrapper {
+    padding: 10px;
 }

@@ -5,3 +5,50 @@ ion-thumbnail{
     width: 74px;
     height:74px;
 }
+ion-footer {
+--ion-toolbar-background: rgba(0, 127, 255, 0.6);
+//height: 80px;
+}
+ion-title {
+    font-size: 20px;
+}
+.item {
+    border-radius: 8px;
+    border: solid  rgba(23, 139, 255, 1);
+    margin-bottom: 10px;
+    color: rgba(137, 138, 141, 1);
+}
+.cart-body {
+    display: flex;
+    justify-content: space-between;
+}
+ion-card {
+    background: #F6F6F6;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+p {
+    margin: 5px 0;
+}
+ion-label {
+    color: #898A8D !important;
+}
+.accordion-item {
+    background: #F6F6F6;
+    border: none;
+}
+.ionicon {
+    rotate: -90deg !important;
+}
+ion-avatar {
+    width: 32px;
+    height: 32px;
+}
+footer-text {
+    font-size: 16px;
+}
+.menu-link {
+    color: #000;
+    text-decoration: none;
+}

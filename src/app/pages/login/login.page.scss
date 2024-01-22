@@ -15,9 +15,11 @@ ion-header {
     background: rgba(0, 127, 255, 1);
     height: 52px;
     color: #fff;
+    font-size: 20px;
 }
 .heading1{
-    margin: 0 0 20px 15px;
+    margin: 0 0 20px 0;
+    font-size: 28px;
 }
 .auth-toggle-link {
     text-align: center;
@@ -25,4 +27,16 @@ ion-header {
     display: block;
     cursor: pointer;
     text-decoration: none;
+    font-size: 14px;
 }
+ion-item{
+    --padding-end: 0px;
+    --padding-start:0px;
+    .item-inner{
+        padding:0 !important;
+      }
+}
+.item-inner{
+  padding-left:unset !important;
+}
+

@@ -1,3 +1,43 @@
 .text {
     color: black;
+    font-size: 12px;
+    width: 50%;
 }
+.heading1 {
+    font-size: 20px;
+}
+.heading2 {
+    font-size: 14px;
+
+}
+ion-card {
+    background:#000;
+}
+ion-thumbnail{
+    width: 74px;
+    height: 74px;
+}
+.badge-text {
+    font-size: 12px;
+}
+.cart-button {
+    font-size: 16px;
+}
+ion-title {
+    font-size: 20px;
+}
+.menu-link {
+    color: #000;
+    text-decoration: none;
+}
+.quantity-group button{
+    padding: 10px;
+}
+.quantity-group input{
+    padding: 10px;
+    width: 40px;
+}
+.order-block {
+    display: flex;
+}
+

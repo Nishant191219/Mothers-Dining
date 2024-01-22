@@ -6,20 +6,20 @@
 <ion-content padding>
   <div class="sign-up">
     <ion-label><h1 class="heading1">Sign Up</h1></ion-label>
-    <form>
+    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
       <ion-item>
-        <ion-input class="form-input" type="text" placeholder="Name"></ion-input>
+        <ion-input class="form-input" type="text" placeholder="Name" name="name" ngModel></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input class="form-input" type="email" placeholder="Email"></ion-input>
+        <ion-input class="form-input" type="email" placeholder="Email" name="email" ngModel></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input class="form-input" type="password" placeholder="Password"></ion-input>
+        <ion-input class="form-input" type="password" placeholder="Password" name="password" ngModel></ion-input>
       </ion-item> 
       <ion-item>
-        <ion-input class="form-input" type="password" placeholder="Confirm Password"></ion-input>
+        <ion-input class="form-input" type="password" placeholder="Confirm Password" name="confirm_passsword" ngModel></ion-input>
       </ion-item>
-      <button ion-button color="primary" class="sign-up-button" (click)="signUp()">Sign Up</button>
+      <button ion-button color="primary" class="sign-up-button">Sign Up</button>
       <a class="auth-toggle-link" routerLink="/login">Already a member? Login</a>
     </form>
   </div>

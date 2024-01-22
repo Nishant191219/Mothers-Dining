@@ -19,6 +19,7 @@ ion-input {
 .btn {
     float: right;
     color:rgba(23, 139, 255, 1);
+    font-size: 10px;
 }
 .coupon-content-block {
     width:80%;
@@ -38,10 +39,30 @@ ion-input {
 }
 .coupon-content-text {
     margin-bottom: 10px;
+    font-size: 12px;
 }
 ion-item {
     button {
      font-size: 16px;
      background: #fff;
     }
+}
+heading2 {
+    font-size: 16px;
+}
+ion-searhbar {
+    font-size: 14px;
+    margin: 0 16px;
+    width: 92% !important;
+}
+ion-avatar {
+    width: 32px;
+    height: 32px;
+}
+.menu-btn, .heading1 {
+    font-size: 16px;
+}
+.menu-avatar {
+    width: 120px;
+    height: 120px;
 }

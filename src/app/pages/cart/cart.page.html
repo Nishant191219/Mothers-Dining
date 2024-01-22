@@ -1,13 +1,151 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Cart</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="cart-content">
+  <ion-content class="ion-padding">
+    <div style="text-align: center;">
+      <ion-avatar style="margin: auto;">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <h1>Amar Anthony</h1>
+      <p>+91 123456789</p>
+      <ion-list lines="none">
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            Go To Cart
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            <a class="menu-link" routerLink="/thali">Thali Menu</a>
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="cart" class="ion-margin-end"></ion-icon>
+            <a class="menu-link" routerLink="/course-meal">Course Menu</a>
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="timer-outline" class="ion-margin-end"></ion-icon>
+            Order History
+          </button>
+        </ion-item>
+        <ion-item>
+          <button slot="start">
+            <ion-icon name="settings-outline" class="ion-margin-end"></ion-icon>
+            Settings
+          </button>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="cart-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Cart</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Mother’s Dining
+      </ion-title>
+      <ion-avatar slot="end">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-buttons slot="start"><ion-back-button defaultHref="splash-screen">Cart</ion-back-button><b>Cart</b></ion-buttons>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  <ion-content>
+    <ion-list class="ion-margin-horizontal">
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light" class="item">
+            <ion-label>Delivery/dining </ion-label>
+          </ion-item>
+          <div slot="content">
+            <ion-accordion-group>
+              <ion-accordion value="first">
+                <ion-item slot="header" class=" item accordion-item">
+                  <ion-label>Home Delivery</ion-label>
+                </ion-item>
+                <div class="ion-padding" slot="content">Dropdown 1 To select Home delivery or Dining</div>
+              </ion-accordion>
+            </ion-accordion-group>
+          </div>
+          <div slot="content">
+            <ion-accordion-group>
+              <ion-accordion value="first">
+                <ion-item slot="header" class="item accordion-item">
+                  <ion-label>Hotel Dining</ion-label>
+                </ion-item>
+              </ion-accordion>
+            </ion-accordion-group>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>Select Address / Table</ion-label>
+          </ion-item>
+          <div slot="content" class="accordion-item">
+              <div class="ion-padding" slot="content">A/P - Hinjewadi phase 3, Sahyadri park, Pune 411...</div>
+              <div class="ion-padding" slot="content">+ Add new address</div>
+          </div>
+          <div slot="content">
+            <ion-accordion-group>
+              <ion-accordion value="first">
+                <ion-item slot="header" color="light">
+                  <ion-label>Select Table</ion-label>
+                </ion-item>
+                <div slot="content" class="accordion-item">
+                      <div class="ion-padding" slot="content">Table 1</div>
+                      <div class="ion-padding" slot="content">Table 2</div>
+                      <div class="ion-padding" slot="content">Table 3</div>
+                </div>
+              </ion-accordion>
+            </ion-accordion-group>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>Apply Coupons</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">First Content</div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-list>
+    <ion-card>
+      <div class="cart-body">
+        <p>Items</p>
+        <p>₹485</p>
+      </div>
+      <div class="cart-body">
+        <p>Delivery & Pkg. Charges</p>
+        <p>₹85</p>
+      </div>
+      <div class="cart-body">
+        <p>Taxes</p>
+        <p>₹39</p>
+      </div>
+      <div class="cart-body">
+        <p style="color:rgba(0, 166, 7, 1);">Coupon Discount</p>
+        <p style="color:rgba(0, 166, 7, 1);">- ₹48</p>
+      </div>
+      <div class="cart-body">
+        <p><b>Total</b></p>
+        <p><b>₹571</b></p>
+      </div>
+    </ion-card>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar class="footer-section">
+      <ion-title class="footer-text">Place Order</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</div>
