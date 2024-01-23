@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
   },
   {
-    path: 'splash-screen',
+    path: '',
     loadChildren: () => import('./pages/splash-screen/splash-screen.module').then( m => m.SplashScreenPageModule)
   },
   {

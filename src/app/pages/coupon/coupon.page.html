@@ -1,38 +1,38 @@
 <ion-menu contentId="main-content">
   <ion-content class="ion-padding">
     <div style="text-align: center;">
-      <ion-avatar style="margin: auto;">
+      <ion-avatar style="margin: auto;" class="menu-avatar">
         <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
-      <h1>Amar Anthony</h1>
+      <h1  class="heading1">Amar Anthony</h1>
       <p>+91 123456789</p>
       <ion-list lines="none">
         <ion-item>
-          <button slot="start">
+          <button slot="start" class="menu-btn">
             <ion-icon name="cart" class="ion-margin-end"></ion-icon>
             Go To Cart
           </button>
         </ion-item>
         <ion-item>
-          <button slot="start">
+          <button slot="start" class="menu-btn">
             <ion-icon name="cart" class="ion-margin-end"></ion-icon>
             Thali Menu
           </button>
         </ion-item>
         <ion-item>
-          <button slot="start">
+          <button slot="start" class="menu-btn">
             <ion-icon name="cart" class="ion-margin-end"></ion-icon>
             Course Menu
           </button>
         </ion-item>
         <ion-item>
-          <button slot="start">
+          <button slot="start" class="menu-btn">
             <ion-icon name="timer-outline" class="ion-margin-end"></ion-icon>
             Order History
           </button>
         </ion-item>
         <ion-item>
-          <button slot="start">
+          <button slot="start" class="menu-btn">
             <ion-icon name="settings-outline" class="ion-margin-end"></ion-icon>
             Settings
           </button>
@@ -54,6 +54,8 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
+    <ion-searchbar placeholder="Enter Coupon Code" class="ion-margin-horizontal ion-no-padding">
+    </ion-searchbar>
     <ion-card>
      <ion-card-content class="ion-no-padding">
        <div class="coupon-container">
@@ -63,7 +65,7 @@
          <!-- <p>10% OFF</p> -->
          <div class="coupon-content-block">
            <div class="coupon-content-body">
-             <h1>OFFTEN</h1>
+             <h2 class="heading2">OFFTEN</h2>
              <button class="btn" style="float: right;">Apply</button>
            </div>
            <p class="text">Save ₹105 on this order!</p>
@@ -83,7 +85,7 @@
          <!-- <p>10% OFF</p> -->
          <div class="coupon-content-block">
            <div class="coupon-content-body">
-             <h1>OFFTWENTY</h1>
+             <h2 class="heading2">OFFTWENTY</h2>
              <button class="btn" style="float: right;">Apply</button>
            </div>
            <p class="text">Save ₹105 on this order!</p>
@@ -103,7 +105,7 @@
          <!-- <p>10% OFF</p> -->
          <div class="coupon-content-block">
            <div class="coupon-content-body">
-             <h1>OFFPAYTM</h1>
+             <h2 class="heading2">OFFPAYTM</h2>
              <button class="btn" style="float: right;">Apply</button>
            </div>
            <p class="text">Save ₹200 on this order!</p>
@@ -123,7 +125,7 @@
          <!-- <p>10% OFF</p> -->
          <div class="coupon-content-block">
            <div class="coupon-content-body">
-             <h1>FIRSTORDER</h1>
+             <h2 class="heading2">FIRSTORDER</h2>
              <button class="btn" style="float: right;">Apply</button>
            </div>
            <p class="text">Save ₹60 on this order!</p>
